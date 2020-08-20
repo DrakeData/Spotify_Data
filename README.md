@@ -41,7 +41,7 @@ You will need:
 ### How to get access to Spotify API
 1. To get the Client ID and Client Secret keys, login/create an account on the [Spotify Developers Dashboard](https://developer.spotify.com/dashboard/login).
 <br/>
-![access_step1](images/spotify_dev.png)
+<img src="images/spotify_dev.png" width="400" height="600">
 <br/>
 2. Click "Create an app".
   - Give it a name.
@@ -49,7 +49,7 @@ You will need:
   - Check the terms and agreements.
   - Click 'Create'.
 <br/>
-![access_step2](images/spotify_dev2.png)
+<img src="images/spotify_dev2.png" width="400" height="600">
 <br/>
 3. Once your app is created, it will take you to the app's homepage. This is where you will find the Client ID and Client Secret keys.
 <br/>
