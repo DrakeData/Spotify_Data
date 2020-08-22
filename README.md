@@ -39,42 +39,7 @@ You will need:
 4. Your auth_token
 
 ### How to get access to Spotify API
-1. To get the Client ID and Client Secret keys, login/create an account on the [Spotify Developers Dashboard](https://developer.spotify.com/dashboard/login).
-<br/>
-<img src="images/spotify_dev.png" width="400" height="600">
-<br/>
-2. Click "Create an app".
-  - Give it a name.
-  - A brief description of what you want to do.
-  - Check the terms and agreements.
-  - Click 'Create'.
-<br/>
-<img src="images/spotify_dev2.png" width="400" height="600">
-<br/>
-3. Once your app is created, it will take you to the app's homepage. This is where you will find the Client ID and Client Secret keys.
-<br/>
-![access_step3](images/spotify_dev3.png)
-<br/>
-4. Copy and past your Client ID and Client Secret keys into a config.py file. DO NOT PUBLISH THESE KEYS.
-5. Once you save your keys in the config.py file, click 'Edit Setting' in the app.
-6. Add a Redirect URI to your app.
-  - For this example, we used 'http://localhost:7777/callback'; You can use this as well.
-<br/>
-![access_step4](images/spotify_dev4.png)
-<br/>
-7. Get your username and save it in the config.py file.
-- To get your username, go to [Spotify's Home Page](https://www.spotify.com/us/).
-- Login at the top right corner of the page.
-- Click on account.
-- Under Profile, you will find you username.
-<br/>
-![access_step5](images/spotify_dev5.png)
-<br/>
-
-Your config.py file should look like this:
-<br/>
-![access_step6](images/spotify_dev6.png)
-<br/>
+See [this documentation](https://docs.google.com/document/d/1jyA7lVMDGPY58dkp6uqyZzQIvDeGvZ6be5VlswqpvPg/edit?usp=sharing) on how to get access to Spotify's API.
 
 ## FAQ
 **Q. What should I do when client script errors?**
@@ -91,11 +56,11 @@ Updating of the endpoints and the retesting of the script will need to take plac
 <br/>
 **Q. What happens if I were to delete the python script?**
 <br/>
-A. The script is centrally managed via GitHub, in which it tracks version control
-and can be referenced to restore any scripts used for the project.
+A. The script is centrally managed via GitHub, in which it tracks version control and can be referenced to restore any scripts used for the project.
 
 ## Helpful Links
-Coming soon
+- [Spotify Web API - Authorization Guide](https://developer.spotify.com/documentation/general/guides/authorization-guide/): Details on gaining access to the API.
+- [Spotify API References](https://developer.spotify.com/documentation/web-api/reference/object-model/): A full list of the objects returned by the endpoints of the Spotify Web API.
 
 ## Repository Information
 Created Date: 08/03/2020 <br/>
