@@ -1,6 +1,6 @@
 ![spotify_logo](images/spotify_logo3.png)
 
-# Sportify Data API Webscrape
+# Spotify Data API Webscrape
 This project is to use Spotify API endpoints to pull back personal user data.
 
 ## Table of Contents (Coming Soon)

@@ -16,6 +16,9 @@ credentials = service_account.Credentials.from_service_account_file(
 # Create the file name we will be exporting later
 today = datetime.today().strftime('%Y%m%d')
 
+destinatoin_table = 'spotify_api.recently_played_tracks'
+project_id = 'spotify-project-287802'
+
 
 def spotify_access_token():
     '''
@@ -33,7 +36,8 @@ def spotify_access_token():
                                             scope=scope,
                                             client_id=client_id,
                                             client_secret=client_secret,
-                                            redirect_uri=redirect_uri)
+                                            redirect_uri=redirect_uri
+                                            )
     return auth_token
 
 
@@ -134,7 +138,7 @@ def bq_dup_check():
     return df1_clean
 
 
-def bq_load_data():
+def bq_load_data(destinatoin_table, project_id):
     '''
     Loads df_clean to potify_api.recently_played_tracks
     :return:
@@ -144,12 +148,10 @@ def bq_load_data():
     print('Loading data into GCP BigQuery')
     # Load into GCP BigQuery
     # Connect to Google Cloud API and upload dataframe
-    destinatoin_table = 'spotify_api.recently_played_tracks'
-    project_id = 'spotify-project-287802'
 
 
     pandas_gbq.to_gbq(df1_clean, destinatoin_table, project_id, if_exists='append',
                       credentials=credentials)
     print('Script is complete; check table for details.')
 
-bq_load_data()
+bq_load_data(destinatoin_table, project_id)
