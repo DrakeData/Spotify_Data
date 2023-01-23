@@ -1,4 +1,4 @@
-spotipy==2.13.0
+spotipy==2.22.1
 pandas_gbq==0.13.2
 tzlocal==2.1
 pandas==1.0.3
